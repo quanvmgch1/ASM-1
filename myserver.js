@@ -12,5 +12,10 @@ app.use(express.static(publicDir));
 app.get("/",(req,res)=>{
     res.render('shop');
 })
-
+app.get("/login",(req,res)=>{
+    res.render('login');
+})
+app.get("/category",(req,res)=>{
+    res.render('category');
+})
 var server=app.listen(port,function() {});
